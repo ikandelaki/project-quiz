@@ -6,7 +6,6 @@ const Test = ({
   start,
   chosenAnswers,
   setFinish,
-  choice,
   setActiveChoice,
   currentQuestion,
   setCurrentQuestion,
