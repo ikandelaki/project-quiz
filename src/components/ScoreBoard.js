@@ -35,14 +35,14 @@ const ScoreBoard = ({
 
     return (
       <>
-        {wrongAnswersArray.map((wrongAnswer) => {
+        {wrongAnswersArray.map((wrongAnswer, i) => {
           return (
-            <>
+            <div key={i}>
               {renderQuestion(questions.indexOf(wrongAnswer))}
               <div className='correct-answer'>
                 Correct answer: {renderCorrectAnswer(wrongAnswer)}
               </div>
-            </>
+            </div>
           );
         })}
       </>
