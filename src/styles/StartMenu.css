@@ -11,6 +11,14 @@
 
 .start-heading {
   color: #212529;
+  font-size: 48px;
+  text-align: center;
+}
+
+.start-heading-description {
+  margin-top: 24px;
+  color: #212529;
+  font-size: 28px;
 }
 
 .btn {
