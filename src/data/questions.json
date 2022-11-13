@@ -1,0 +1,218 @@
+[
+  {
+    "question": "Traditionally risk has been defined as:",
+    "hasOptions": false,
+    "answers": [
+      "Uncertainty concerning the occurrence of loss.",
+      "Any situation in which the probability of loss is one.",
+      "The certainty of a loss occurring.",
+      "Any situation in which the probability of loss is zero."
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Characteristics of a fortuitous loss include which of the following?",
+    "hasOptions": [
+      "I. Loss is certain to occur",
+      "II. The loss occurs as a result of chance"
+    ],
+    "answers": ["Neither I nor II", "II only", "Both I and II", "I only"],
+    "correct": 1
+  },
+  {
+    "question": "A group of farmers agreed that if any farmer suffered a property loss, the loss would be spread over the entire group. In this way, each farmer is responsible for the average loss of the group rather than the actual loss that the farmer sustained. Which characteristics of insurance is embodied in the agreement?",
+    "hasOptions": false,
+    "answers": [
+      "Risk avoidance.",
+      "Pooling of losses.",
+      "Fortuitous losses.",
+      "Indemnification"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "From the standpoint of the insurer, all of the following are characteristics of an insurable risk, except:",
+    "hasOptions": false,
+    "answers": [
+      "The loss must be indeterminable.",
+      "The loss must be measurable.",
+      "The chance of loss must be calculable.",
+      "The loss must be unintentional."
+    ],
+    "correct": 0
+  },
+  {
+    "question": "According to the Law of Large Numbers, what should happen as an insurer increases the number of units insured?",
+    "hasOptions": false,
+    "answers": [
+      "Underwriting expenses should decrease.",
+      "The amount the insurer expects to pay in claims should decrease.",
+      "The insurer’s profitability should become more variable.",
+      "Actual results will more closely approach expected results."
+    ],
+    "correct": 3
+  },
+  {
+    "question": "Why is a large number of exposure units generally required before a pure risk is insurable?",
+    "hasOptions": false,
+    "answers": [
+      "It enables the insurer to predict losses more accurately.",
+      "It minimizes moral hazard.",
+      "It prevents the insurer from losing money.",
+      "It eliminates intentional losses."
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Which of the following types of risks best meets the requirements for being insurable by private insurers:",
+    "hasOptions": false,
+    "answers": [
+      "Financial risks.",
+      "Market risks.",
+      "Property risks.",
+      "Political risks."
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Dense fog that increases the chance of an automobile accident is an example of",
+    "hasOptions": false,
+    "answers": [
+      "Moral hazard.",
+      "Peril.",
+      "Speculative risk.",
+      "Physical hazard."
+    ],
+    "correct": 3
+  },
+  {
+    "question": "Taylor Tobacco Company is concerned that the company may held liable in a court of law and ordered to pay a large damage award. The characteristics of the juridical system that increase the frequency and severity of losses are known as",
+    "hasOptions": false,
+    "answers": [
+      "Physical award.",
+      "Legal hazard.",
+      "Moral hazard.",
+      "Morale hazard."
+    ],
+    "correct": 1
+  },
+  {
+    "question": "An earthquake is an example of a",
+    "hasOptions": false,
+    "answers": [
+      "Objective risk.",
+      "Moral hazard.",
+      "Peril.",
+      "Physical hazard."
+    ],
+    "correct": 2
+  },
+  {
+    "question": "The tendency for unhealthy people to seek life or health insurance at standard rates is an example of",
+    "hasOptions": false,
+    "answers": [
+      "Moral hazard.",
+      "Fundamental risk.",
+      "Morale hazard.",
+      "Adverse selection."
+    ],
+    "correct": 3
+  },
+  {
+    "question": "Faking an incident to collect insurance proceeds is an example of a:",
+    "hasOptions": false,
+    "answers": [
+      "Morale hazard.",
+      "Physical hazard.",
+      "Objective risk.",
+      "Moral hazard."
+    ],
+    "correct": 3
+  },
+  {
+    "question": "Which of the following is implied by the pooling of losses?",
+    "hasOptions": false,
+    "answers": [
+      "Sharing of losses by an entire group.",
+      "Inability to predict losses with any degree of accuracy.",
+      "Decrease of subjective risk.",
+      "Increase of objective risk."
+    ],
+    "correct": 0
+  },
+  {
+    "question": "A commercial property that is a total loss as a result of fire is an example of which of the following types of risk?",
+    "hasOptions": ["I. Speculative risk", "II. Fundamental risk"],
+    "answers": ["I only.", "II only.", "Both I and II.", "Neither I nor II."],
+    "correct": 1
+  },
+  {
+    "question": "Which of the following statements regarding insurance and gambling is (are) true?",
+    "hasOptions": [
+      "I. Insurance is used to handle existing pure risks, while gambling creates a new speculative risk.",
+      "II. Insurance usually involves risk avoidance, while gambling typically involves only risk reduction."
+    ],
+    "answers": ["I only.", "II only.", "Both I and II.", "Neither I nor II."],
+    "correct": 0
+  },
+  {
+    "question": "Methods by which insurers may minimize or avoid catastrophic losses include which of the following?",
+    "hasOptions": [
+      "I. The use of reinsurance.",
+      "II. Concentrating coverage written in one geographic region."
+    ],
+    "answers": ["I only.", "II only.", "Both I and II.", "Neither I nor II."],
+    "correct": 0
+  },
+  {
+    "question": "Which of the following types of risks is normally uninsurable by private insurers?",
+    "hasOptions": false,
+    "answers": [
+      "Personal risks.",
+      "Property risks.",
+      "Liability risks.",
+      "Market risks."
+    ],
+    "correct": 3
+  },
+  {
+    "question": "Which of the following is a result of adverse selection?",
+    "hasOptions": false,
+    "answers": [
+      "The insurer’s financial results will be substantially improved.",
+      "Persons most likely to have losses are also most likely to seek insurance at standard rates.",
+      "It is unnecessary for the insurance company to use underwriting.",
+      "Insurance can be written only by the federal government."
+    ],
+    "correct": 1
+  },
+  {
+    "question": "From the viewpoint of the insurer, all of the following are characteristics of an insurable risk EXCEPT?",
+    "hasOptions": false,
+    "answers": [
+      "The loss must be accidental.",
+      "The loss should be catastrophic.",
+      "The premium must be economically feasible.",
+      "There must be a large number of exposure units."
+    ],
+    "correct": 1
+  },
+  {
+    "question": "The requirement that losses should be accidental and unintentional in order to be insurable results in which of the following?",
+    "hasOptions": [
+      "I. Decrease in moral hazard.",
+      "II. More accurate prediction of future losses."
+    ],
+    "answers": ["I only.", "II only.", "Both I and II.", "Neither I nor II."],
+    "correct": 1
+  },
+  {
+    "question": "Which of the following is implied by the requirement that a loss should be determinable and measurable to be insurable?",
+    "hasOptions": [
+      "I. The loss must be definite as to place.",
+      "II. The loss must be definite as to amount."
+    ],
+    "answers": ["I only.", "II only.", "Both I and II.", "Neither I nor II."],
+    "correct": 2
+  }
+]

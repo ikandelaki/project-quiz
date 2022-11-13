@@ -1,0 +1,38 @@
+.menu-container {
+  padding: 96px;
+  border-radius: 48px;
+  max-width: 800px;
+  margin: 140px auto 0;
+}
+
+.start-menu.disabled {
+  display: none;
+}
+
+.start-heading {
+  color: #212529;
+}
+
+.btn {
+  width: max-content;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px#000;
+  cursor: pointer;
+  padding: 8px 32px;
+
+  color: #495057;
+  background-color: #fff;
+  font-size: 24px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.start-btn {
+  margin: 48px auto 0;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #212529;
+  box-shadow: 0 0 0 2px #212529;
+}

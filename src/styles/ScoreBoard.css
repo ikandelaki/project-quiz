@@ -1,0 +1,27 @@
+.scoreboard-container {
+  max-width: 1440px;
+  position: relative;
+}
+
+.correct-answer {
+  color: #fa5252;
+  margin-top: 16px;
+  font-size: 18px;
+}
+
+.finish-btns-container {
+  margin-top: 48px;
+  display: flex;
+  gap: 16px;
+}
+
+.wrong-answers-container {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.wrong-answers-container.active {
+  transform: translateY(0);
+  opacity: 1;
+}
