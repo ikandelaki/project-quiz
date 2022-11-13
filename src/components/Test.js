@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import questions from "../data/questions.json";
 import "../styles/Test.css";
 
@@ -16,8 +16,8 @@ const Test = ({
     if (chosenAnswers[currentQuestion] !== null)
       return setActiveChoice(chosenAnswers[currentQuestion]);
 
-    return setActiveChoice();
-  }, [choice, currentQuestion]);
+    setActiveChoice();
+  });
 
   return (
     <div className={`menu-container test-container ${start ? "active" : ""}`}>
