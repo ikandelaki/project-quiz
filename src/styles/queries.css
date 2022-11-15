@@ -19,6 +19,10 @@
 }
 
 @media screen and (max-width: 762px) {
+  .scoreboard-container.menu-container {
+    margin-top: 0;
+  }
+
   .question-title,
   .scoreboard-top-description h1,
   .start-heading-description {
