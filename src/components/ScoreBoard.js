@@ -15,7 +15,7 @@ const ScoreBoard = ({
 
   const calculateCorrectAnswers = () => {
     return questions.reduce((acc, question, i) => {
-      if (question.correct === chosenAnswers[i]) {
+      if (chosenAnswers && question.correct === chosenAnswers[i]) {
         return acc + 1;
       }
       return acc;
@@ -29,6 +29,7 @@ const ScoreBoard = ({
   };
 
   const renderWrongAnswers = () => {
+    if (!chosenAnswers) return;
     const wrongAnswersArray = questions.filter(
       (question, i) => question.correct !== chosenAnswers[i]
     );

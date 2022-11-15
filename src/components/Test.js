@@ -12,7 +12,7 @@ const Test = ({
   renderQuestion,
 }) => {
   useEffect(() => {
-    if (chosenAnswers[currentQuestion] !== null)
+    if (chosenAnswers && chosenAnswers[currentQuestion] !== null)
       return setActiveChoice(chosenAnswers[currentQuestion]);
 
     setActiveChoice();
