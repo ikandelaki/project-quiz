@@ -47,7 +47,7 @@
 
   .menu-container {
     padding: 16px;
-    margin-top: 16px;
+    margin-top: 20%;
   }
 
   .finish-btns-container {
@@ -61,7 +61,7 @@
 
 @media screen and (max-width: 440px) {
   .menu-container {
-    margin-top: 0px;
+    margin-top: 40%;
   }
 
   .question-title,
