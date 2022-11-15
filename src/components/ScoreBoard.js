@@ -58,7 +58,7 @@ const ScoreBoard = ({
         <div className='finish-btns-container'>
           {calculateCorrectAnswers() < questions.length ? (
             <div
-              className='btn btn-mistakes'
+              className='btn btn-mistakes no-highlight'
               onClick={() => toggleDisplayWrongAnswers(!displayWrongAnswers)}
             >
               Check mistakes

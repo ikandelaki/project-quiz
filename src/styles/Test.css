@@ -60,6 +60,7 @@
   background-color: #fff;
   border-radius: 2px;
   border: 2px solid #495057;
+  flex-shrink: 0;
 }
 
 .question-answer-container:hover .question-checkbox {

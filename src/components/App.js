@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../styles/App.css";
 import StartMenu from "./StartMenu";
 import ScoreBoard from "./ScoreBoard";
@@ -13,19 +13,65 @@ const App = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
   const handleAnswerChoice = (possibleAnswer) => {
+    let answerToSave;
+    let extendChosenAnswers;
+
     if (choice === possibleAnswer) {
       setActiveChoice();
+      answerToSave = null;
     } else {
       setActiveChoice(possibleAnswer);
-      if (!Object.keys(chosenAnswers).length)
-        return setChosenAnswers({ [currentQuestion]: possibleAnswer });
-      const extendChosenAnswers = {
-        ...chosenAnswers,
-        [currentQuestion]: possibleAnswer,
-      };
-      setChosenAnswers(extendChosenAnswers);
+      answerToSave = possibleAnswer;
     }
+
+    if (!Object.keys(chosenAnswers).length)
+      return setChosenAnswers({ [currentQuestion]: answerToSave });
+    extendChosenAnswers = {
+      ...chosenAnswers,
+      [currentQuestion]: answerToSave,
+    };
+    setChosenAnswers(extendChosenAnswers);
   };
+
+  useEffect(() => {
+    const CURRENT_QUESTION = JSON.parse(
+      localStorage.getItem("currentQuestion")
+    );
+    const START = JSON.parse(localStorage.getItem("start"));
+    const FINISH = JSON.parse(localStorage.getItem("finish"));
+    const CHOICE = JSON.parse(localStorage.getItem("choice"));
+    const CHOSEN_ANSWERS = JSON.parse(localStorage.getItem("chosenAnswers"));
+
+    if (CURRENT_QUESTION) {
+      setCurrentQuestion(CURRENT_QUESTION);
+    }
+
+    if (START) {
+      setStart(START);
+    }
+
+    if (FINISH) {
+      setFinish(FINISH);
+    }
+
+    if (CHOICE) {
+      setActiveChoice(CHOICE);
+    }
+
+    if (JSON.stringify(CHOSEN_ANSWERS) !== "{}") {
+      setChosenAnswers(CHOSEN_ANSWERS);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("currentQuestion", currentQuestion);
+    localStorage.setItem("start", start);
+    localStorage.setItem("finish", finish);
+    if (choice !== undefined) {
+      localStorage.setItem("choice", choice);
+    }
+    localStorage.setItem("chosenAnswers", JSON.stringify(chosenAnswers));
+  });
 
   const renderQuestion = (question, clickable) => {
     return (

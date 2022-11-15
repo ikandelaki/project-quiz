@@ -8,3 +8,17 @@ body {
   font-family: "Outfit", sans-serif;
   background-color: #e9ecef;
 }
+
+/* Disable blue highlight on text upon double click (using for buttons) */
+.no-highlight {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.no-highlight:focus {
+  outline: none !important;
+}

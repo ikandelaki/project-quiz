@@ -32,7 +32,7 @@ const Test = ({
       <div className='test-btn--container'>
         {currentQuestion > 0 ? (
           <div
-            className='btn test-btn--prev'
+            className='btn test-btn--prev no-highlight'
             onClick={() => setCurrentQuestion(currentQuestion - 1)}
           >
             Previous
@@ -40,13 +40,16 @@ const Test = ({
         ) : null}
         {currentQuestion < questions.length - 1 ? (
           <div
-            className='btn test-btn--next'
+            className='btn test-btn--next no-highlight'
             onClick={() => setCurrentQuestion(currentQuestion + 1)}
           >
             Next
           </div>
         ) : (
-          <div className='btn test-btn--next' onClick={() => setFinish(true)}>
+          <div
+            className='btn test-btn--next no-highlight'
+            onClick={() => setFinish(true)}
+          >
             Finish test
           </div>
         )}
