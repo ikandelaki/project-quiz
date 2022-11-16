@@ -24,7 +24,7 @@ const App = () => {
       answerToSave = possibleAnswer;
     }
 
-    if (!Object.keys(chosenAnswers).length)
+    if (!chosenAnswers)
       return setChosenAnswers({ [currentQuestion]: answerToSave });
     extendChosenAnswers = {
       ...chosenAnswers,
@@ -75,16 +75,16 @@ const App = () => {
 
   const renderQuestion = (question, clickable) => {
     return (
-      <div className='question-container'>
-        <h1 className='question-title'>{questions[question]["question"]}</h1>
+      <div className="question-container">
+        <h1 className="question-title">{questions[question]["question"]}</h1>
         {questions[question].hasOptions ? (
-          <div className='question-options'>
+          <div className="question-options">
             {questions[question].hasOptions.map((option) => {
               return <h1 key={option}>{option}</h1>;
             })}
           </div>
         ) : null}
-        <ul className='question-answers'>
+        <ul className="question-answers">
           {questions[question]["answers"].map((possibleAnswer, i) => {
             return (
               <div
@@ -102,8 +102,8 @@ const App = () => {
                   );
                 }}
               >
-                <div className='question-checkbox'></div>
-                <div className='question-answer'>{possibleAnswer}</div>
+                <div className="question-checkbox"></div>
+                <div className="question-answer">{possibleAnswer}</div>
               </div>
             );
           })}
@@ -113,7 +113,7 @@ const App = () => {
   };
 
   return (
-    <div className='App'>
+    <div className="App">
       {start && !finish ? (
         <Test
           start={start}
