@@ -3,6 +3,7 @@ import "../styles/App.css";
 import StartMenu from "./StartMenu";
 import ScoreBoard from "./ScoreBoard";
 import Test from "./Test";
+import JumpToQuestion from "./JumpToQuestion";
 import questions from "../data/questions.json";
 
 const App = () => {
@@ -76,38 +77,47 @@ const App = () => {
   const renderQuestion = (question, clickable) => {
     return (
       <div className="question-container">
-        <h1 className="question-title">{questions[question]["question"]}</h1>
-        {questions[question].hasOptions ? (
-          <div className="question-options">
-            {questions[question].hasOptions.map((option) => {
-              return <h1 key={option}>{option}</h1>;
-            })}
-          </div>
-        ) : null}
-        <ul className="question-answers">
-          {questions[question]["answers"].map((possibleAnswer, i) => {
-            return (
-              <div
-                key={possibleAnswer}
-                className={`question-answer-container ${
-                  choice ===
-                  questions[question]["answers"].indexOf(possibleAnswer)
-                    ? "active"
-                    : ""
-                }`}
-                onClick={() => {
-                  if (!clickable) return;
-                  handleAnswerChoice(
+        <div>
+          <h1 className="question-title">{questions[question]["question"]}</h1>
+          {questions[question].hasOptions ? (
+            <div className="question-options">
+              {questions[question].hasOptions.map((option) => {
+                return <h1 key={option}>{option}</h1>;
+              })}
+            </div>
+          ) : null}
+          <ul className="question-answers">
+            {questions[question]["answers"].map((possibleAnswer, i) => {
+              return (
+                <div
+                  key={possibleAnswer}
+                  className={`question-answer-container ${
+                    choice ===
                     questions[question]["answers"].indexOf(possibleAnswer)
-                  );
-                }}
-              >
-                <div className="question-checkbox"></div>
-                <div className="question-answer">{possibleAnswer}</div>
-              </div>
-            );
-          })}
-        </ul>
+                      ? "active"
+                      : ""
+                  }`}
+                  onClick={() => {
+                    if (!clickable) return;
+                    handleAnswerChoice(
+                      questions[question]["answers"].indexOf(possibleAnswer)
+                    );
+                  }}
+                >
+                  <div className="question-checkbox"></div>
+                  <div className="question-answer">{possibleAnswer}</div>
+                </div>
+              );
+            })}
+          </ul>
+        </div>
+        {start && !finish ? (
+          <JumpToQuestion
+            currentQuestion={currentQuestion}
+            setCurrentQuestion={setCurrentQuestion}
+            chosenAnswers={chosenAnswers}
+          />
+        ) : null}
       </div>
     );
   };

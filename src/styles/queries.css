@@ -23,6 +23,20 @@
     margin-top: 0;
   }
 
+  .question-container {
+    flex-direction: column-reverse;
+  }
+
+  .jump-to-question-section {
+    margin-left: unset;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .question-box {
+    flex-shrink: 0;
+  }
+
   .question-title,
   .scoreboard-top-description h1,
   .start-heading-description {
