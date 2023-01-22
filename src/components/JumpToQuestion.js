@@ -6,6 +6,7 @@ const JumpToQuestion = ({
   setCurrentQuestion,
   chosenAnswers,
 }) => {
+  console.log(chosenAnswers);
   return (
     <div className="jump-to-question-section">
       {questions.map((question, i) => {
@@ -13,7 +14,10 @@ const JumpToQuestion = ({
           <div
             key={question + i}
             className={`question-box ${currentQuestion === i ? "active" : ""} ${
-              chosenAnswers[i] || chosenAnswers[i] === 0 ? "filled" : ""
+              Object.entries(chosenAnswers) &&
+              (chosenAnswers[i] || chosenAnswers[i] === 0)
+                ? "filled"
+                : ""
             }`}
             onClick={() => setCurrentQuestion(i)}
           >
