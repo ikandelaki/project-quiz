@@ -6,7 +6,6 @@ const JumpToQuestion = ({
   setCurrentQuestion,
   chosenAnswers,
 }) => {
-  console.log(chosenAnswers);
   return (
     <div className="jump-to-question-section">
       {questions.map((question, i) => {
