@@ -14,8 +14,7 @@ const JumpToQuestion = ({
           <div
             key={question + i}
             className={`question-box ${currentQuestion === i ? "active" : ""} ${
-              Object.entries(chosenAnswers) &&
-              (chosenAnswers[i] || chosenAnswers[i] === 0)
+              chosenAnswers && (chosenAnswers[i] || chosenAnswers[i] === 0)
                 ? "filled"
                 : ""
             }`}
